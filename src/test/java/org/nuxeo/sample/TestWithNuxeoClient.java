@@ -33,7 +33,7 @@ public class TestWithNuxeoClient {
 
     @Test
     public void TestClient() throws Exception {
-        NuxeoClient nuxeoClient = new NuxeoClient("http://localhost:8080/nuxeo","Administrator","Administrator");
+        NuxeoClient nuxeoClient = new NuxeoClient("http://localhost:18080/nuxeo","Administrator","Administrator");
         Repository repository = nuxeoClient.repository();
         Document d = repository.fetchDocumentByPath("/default-domain");
 //        Document d = repository.fetchDocumentByPath("/default-domain/workspaces");
